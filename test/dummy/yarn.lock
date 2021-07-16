@@ -1880,9 +1880,9 @@ color-name@^1.0.0:
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
 color-string@^1.5.2:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.3.tgz#c9bbc5f01b58b5492f3d6857459cb6590ce204cc"
-  integrity sha512-dC2C5qeWoYkxki5UAXapdjqO672AM4vZuPGRQfO8b5HKuKGBbKWpITyDYN7TOFKvRW7kOgAn3746clDBMDJyQw==
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.5.5.tgz#65474a8f0e7439625f3d27a6a19d89fc45223014"
+  integrity sha512-jgIoum0OfQfq9Whcfc2z/VhCNcmQjWbey6qBX0vqt7YICflUmBCh9E9CiQD5GSJ+Uehixm3NUwHVhqUAWRivZg==
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
@@ -2564,11 +2564,11 @@ esutils@^2.0.2:
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
 "et_gds_design_system@file:../..":
-  version "0.1.1"
+  version "0.1.13"
   dependencies:
     "@rails/ujs" "^6.0.0"
     "@rails/webpacker" "4.2.2"
-    govuk-frontend "^3.6.0"
+    govuk-frontend "^3.13.0"
     prop-types "^15.7.2"
     turbolinks "^5.2.0"
 
@@ -2972,10 +2972,10 @@ globule@^1.0.0:
     lodash "~4.17.10"
     minimatch "~3.0.2"
 
-govuk-frontend@^3.6.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/govuk-frontend/-/govuk-frontend-3.8.0.tgz#939a0846ead90022b4b56506b098cdce28808c9a"
-  integrity sha512-+vgXzFsh7wpLRGjFSDvDcA2zNA2wOxT6gGs/KUpkTjF1Uop9BerW/1W/YB1BMpeTEJoPlmrkA19+DS1fqJtL9Q==
+govuk-frontend@^3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/govuk-frontend/-/govuk-frontend-3.13.0.tgz#c52f3a3d54edccf58439db038dd75bbee5df0efa"
+  integrity sha512-JiPCeasuHZ+9m1VyqhsfE81PhWIW4Sweoe6Jvn6oMjQNr75ZpupiytN3DGwA+WKOoESHZibIG+heAzlkdZ/MhA==
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.2:
   version "4.2.4"
