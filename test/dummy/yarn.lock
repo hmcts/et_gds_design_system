@@ -2564,11 +2564,11 @@ esutils@^2.0.2:
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
 "et_gds_design_system@file:../..":
-  version "0.1.1"
+  version "0.1.13"
   dependencies:
     "@rails/ujs" "^6.0.0"
     "@rails/webpacker" "4.2.2"
-    govuk-frontend "^3.6.0"
+    govuk-frontend "^3.13.0"
     prop-types "^15.7.2"
     turbolinks "^5.2.0"
 
@@ -2972,10 +2972,10 @@ globule@^1.0.0:
     lodash "~4.17.10"
     minimatch "~3.0.2"
 
-govuk-frontend@^3.6.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/govuk-frontend/-/govuk-frontend-3.8.0.tgz#939a0846ead90022b4b56506b098cdce28808c9a"
-  integrity sha512-+vgXzFsh7wpLRGjFSDvDcA2zNA2wOxT6gGs/KUpkTjF1Uop9BerW/1W/YB1BMpeTEJoPlmrkA19+DS1fqJtL9Q==
+govuk-frontend@^3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/govuk-frontend/-/govuk-frontend-3.13.0.tgz#c52f3a3d54edccf58439db038dd75bbee5df0efa"
+  integrity sha512-JiPCeasuHZ+9m1VyqhsfE81PhWIW4Sweoe6Jvn6oMjQNr75ZpupiytN3DGwA+WKOoESHZibIG+heAzlkdZ/MhA==
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.2:
   version "4.2.4"
@@ -3243,9 +3243,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.4, ini@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+  integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 interpret@^1.4.0:
   version "1.4.0"
