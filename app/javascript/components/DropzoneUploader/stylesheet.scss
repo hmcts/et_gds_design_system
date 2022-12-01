@@ -5,6 +5,14 @@
     text-align: left;
     margin: 0px;
   }
+  .dz-preview {
+    &.dz-error {
+      .dz-error-message {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
 }
 .gds-dropzone-uploader-preview-template {
   display: none;
