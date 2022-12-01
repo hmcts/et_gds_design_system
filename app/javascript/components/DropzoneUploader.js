@@ -143,11 +143,9 @@ const initDropzone = (node, type, acceptedFiles, attributeName) => {
         showButton();
       })
       this.on('error', (file, decodedResponse, xhr) => {
-        if(decodedResponse !== 'not_accepted') { return }
+        if(decodedResponse.status !== 'not_accepted') { return }
 
-        debugger
         const message = decodedResponse.errors.map((error) => error.title).join('<br />')
-        debugger
         document.querySelector("*[data-dz-errormessage]").textContent = message;
       })
 
