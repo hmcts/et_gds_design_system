@@ -1,3 +1,3 @@
 module EtGdsDesignSystem
-  VERSION = '5.0.5-rc3'
+  VERSION = '5.0.5'
 end
