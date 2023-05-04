@@ -1,0 +1,46 @@
+# Ruby
+# Package your Ruby project.
+# Add steps that install rails, analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
+
+name: '$(SourceBranchName)-$(Build.SourceVersion) Build-$(Build.BuildId)'
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+
+pr:
+  autoCancel: true
+  branches:
+    include:
+      - master
+      - feature/*
+
+variables:
+  application.name: 'et_test_helpers'
+  azure.subscription.endpoint: 'hmcts-pet'
+  manual.branch.prefix: 'develop'
+
+jobs:
+  - job: Test
+    pool:
+      vmImage: 'ubuntu-latest'
+      steps:
+        - task: UseRubyVersion@0
+          inputs:
+            versionSpec: '>= 2.7'
+            addToPath: true
+
+        - script: |
+            gem install bundler
+            bundle install
+          displayName: 'Install dependencies'
+
+        - script: |
+            curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+            sudo apt-get install -y nodejs
+            bundle exec rake db:migrate RAILS_ENV=test
+            RAILS_ENV=test bundle exec rake assets:precompile
+            bundle exec rspec
+          displayName: 'Run RSpec tests with asset precompilation'
