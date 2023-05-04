@@ -1,6 +1,6 @@
 require 'capybara'
 Capybara.configure do |config|
-  driver = ENV.fetch('DRIVER', 'chromedriver').to_sym
+  driver = ENV.fetch('DRIVER', 'chromedriver_headless').to_sym
   config.javascript_driver = driver
   config.ignore_hidden_elements = false
   config.visible_text_only = true
@@ -22,6 +22,9 @@ Capybara.register_driver :chromedriver do |app|
   options = Selenium::WebDriver::Chrome::Options.new
   options.add_argument('--no-sandbox')
   options.add_argument('--ignore-certificate-errors')
+  options.add_argument('--disable-smooth-scrolling')
+  options.add_argument('--disable-dev-shm-usage')
+
   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
 end
 
@@ -30,6 +33,8 @@ Capybara.register_driver :chromedriver_headless do |app|
   options.add_argument('--no-sandbox')
   options.add_argument('--headless')
   options.add_argument('--ignore-certificate-errors')
+  options.add_argument('--disable-smooth-scrolling')
+  options.add_argument('--disable-dev-shm-usage')
   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
 end
 
