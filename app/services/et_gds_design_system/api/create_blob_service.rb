@@ -1,6 +1,6 @@
 module EtGdsDesignSystem
   module Api
-    class BlobService < ::EtGdsDesignSystem::ApiService
+    class CreateBlobService < ::EtGdsDesignSystem::ApiService
       def call(body, headers:)
         send_request(body,
                      path: '/create_blob',
