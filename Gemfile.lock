@@ -14,7 +14,7 @@ GIT
 PATH
   remote: .
   specs:
-    et_gds_design_system (5.2.0.pre.rc2)
+    et_gds_design_system (5.2.0.pre.rc3)
       govuk_design_system_formbuilder (~> 3.0)
       rails (>= 6.0)
       typhoeus (~> 1.4)

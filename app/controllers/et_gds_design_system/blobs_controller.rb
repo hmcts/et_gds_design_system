@@ -16,9 +16,10 @@ module EtGdsDesignSystem
 
     def show
       service = Api::ShowBlobService.new
-      response = service.call(headers: request.headers, signed_id: params[:signed_id], filename: params[:filename], format: params[:format])
+      response = service.call(headers: request.headers, signed_id: params[:signed_id], filename: params[:filename],
+                              format: params[:format])
       if service.valid?
-        send_data response.body, filename: params[:filename], type: response.headers['Content-Type'], disposition: 'inline'
+        send_data response.body, filename: params[:filename], type: response.headers['Content-Type']
       else
         render body: response.body, content_type: response.headers['Content-Type'], status: response.code
       end
