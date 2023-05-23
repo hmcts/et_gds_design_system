@@ -19,7 +19,7 @@ module EtGdsDesignSystem
       response = service.call(headers: request.headers, signed_id: params[:signed_id], filename: params[:filename],
                               format: params[:format])
       if service.valid?
-        send_data response.body, filename: params[:filename], type: response.headers['Content-Type']
+        send_data response.body, filename: "#{params[:filename]}.#{params[:format]}", type: response.headers['Content-Type']
       else
         render body: response.body, content_type: response.headers['Content-Type'], status: response.code
       end
