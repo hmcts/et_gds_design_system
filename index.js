@@ -1,7 +1,6 @@
 import RevealOnRadioButton from "./app/javascript/components/RevealOnRadioButton";
 
 const GOVUKFrontend = require("govuk-frontend/govuk/all")
-require.context('govuk-frontend/govuk/assets/images', true)
 require('turbolinks').start();
 import './stylesheet'
 import Components from './app/javascript/components'

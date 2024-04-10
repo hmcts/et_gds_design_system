@@ -14,8 +14,8 @@ GIT
 PATH
   remote: .
   specs:
-    et_gds_design_system (5.4.3)
-      govuk_design_system_formbuilder (~> 4.0)
+    et_gds_design_system (5.5.0)
+      govuk_design_system_formbuilder (= 5.3.0)
       rack
       rails (>= 6.0)
       typhoeus (~> 1.4)
@@ -137,7 +137,7 @@ GEM
     ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    govuk_design_system_formbuilder (4.1.1)
+    govuk_design_system_formbuilder (5.3.0)
       actionview (>= 6.1)
       activemodel (>= 6.1)
       activesupport (>= 6.1)
