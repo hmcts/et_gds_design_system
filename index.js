@@ -1,5 +1,9 @@
 import RevealOnRadioButton from "./app/javascript/components/RevealOnRadioButton";
 import { initAll } from "govuk-frontend";
+import "govuk-frontend/dist/govuk/assets/images/favicon.ico"
+import "govuk-frontend/dist/govuk/assets/images/favicon.svg"
+import "govuk-frontend/dist/govuk/assets/images/govuk-icon-mask.svg"
+import "govuk-frontend/dist/govuk/assets/images/govuk-icon-180.png"
 
 require('turbolinks').start();
 import './stylesheet'
