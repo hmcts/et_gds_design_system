@@ -1,6 +1,6 @@
 # ET GDS Design System
 This gem integrates the govuk-frontend npm modules into a rails
-application that is using webpacker.
+application that is using vite.
 
 ## Usage
 
@@ -33,13 +33,6 @@ And then execute:
 ```bash
 $ bundle exec rails g et_gds_design_system:install
 ```
-
-You might want to review what it has done - which will work if you
-have an application pack in app/javascript/packs/application.js
-
-Also, you may want to consider changing 'extract_css' to true in
-your config/webpacker.yml so that your css works when
-using browsers without javascript.
 
 ## Contributing
 
