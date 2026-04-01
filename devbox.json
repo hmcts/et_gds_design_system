@@ -4,7 +4,9 @@
     "ruby": "4.0.1",
     "nodejs": "latest",
     "yarn": "latest",
-    "pkg-config": "latest"
+    "pkg-config": "latest",
+    "libyaml.dev": "",
+    "libffi.dev": ""
   },
   "shell": {
     "init_hook": [],

@@ -5,6 +5,14 @@
       "last_modified": "2026-04-01T01:09:41Z",
       "resolved": "github:NixOS/nixpkgs/62e3050a29278c985725a86704faa1e99236b51a?lastModified=1775005781"
     },
+    "libffi.dev": {
+      "resolved": "github:NixOS/nixpkgs/62e3050a29278c985725a86704faa1e99236b51a#libffi.dev",
+      "source": "nixpkg"
+    },
+    "libyaml.dev": {
+      "resolved": "github:NixOS/nixpkgs/62e3050a29278c985725a86704faa1e99236b51a#libyaml.dev",
+      "source": "nixpkg"
+    },
     "nodejs@latest": {
       "last_modified": "2026-03-27T11:17:38Z",
       "plugin_version": "0.0.2",
