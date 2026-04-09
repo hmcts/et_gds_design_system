@@ -1,21 +1,13 @@
 import RevealOnRadioButton from "./app/javascript/components/RevealOnRadioButton";
 import { initAll } from "govuk-frontend";
-import TurboLinks from "turbolinks";
-TurboLinks.start();
 import "./stylesheet.scss";
 import Components from "./app/javascript/components";
+import GdsPageController from "./app/javascript/controllers/gds_page_controller";
 const EtGdsDesignSystem = {
-    Components: Components,
+  Components: Components,
 };
-EtGdsDesignSystem.initAll = () => {
-    console.log("EdGdsDesignSystem.initAll was called");
-    const onPageLoad = () => {
-        document.body.className = document.body.className
-            ? document.body.className + " js-enabled"
-            : "js-enabled";
-        initAll();
-        Components.RevealOnRadioButton.init();
-    };
-    document.addEventListener("turbolinks:load", onPageLoad);
+EtGdsDesignSystem.initAll = (application) => {
+  console.log("EdGdsDesignSystem.initAll was called");
+  application.register("gds-page", GdsPageController);
 };
 export { EtGdsDesignSystem, Components };

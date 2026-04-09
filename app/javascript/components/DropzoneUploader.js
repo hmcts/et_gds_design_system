@@ -11,11 +11,15 @@ function setUploadUrl(url) {
 }
 
 function hideButton() {
-  document.querySelector("*[data-auto-hide]").style.display = "none";
+  document
+    .querySelector("*[data-auto-hide]")
+    .classList.add("govuk-!-display-none");
 }
 
 function showButton() {
-  document.querySelector("*[data-auto-hide]").style.display = "";
+  document
+    .querySelector("*[data-auto-hide]")
+    .classList.remove("govuk-!-display-none");
 }
 
 function setupAzure(file, presignedData, done) {
