@@ -88,7 +88,6 @@ const initDropzone = (
   createBlobUrl,
 ) => {
   let provider;
-  console.log("initDropzone called");
   const extractPreviewContent = () => {
     const templateContainer = node.querySelector(
       "*[data-gds-dropzone-uploader-preview-template]",
@@ -115,7 +114,6 @@ const initDropzone = (
         if (provider === "azure") {
           const send = xhr.send;
           xhr.send = function () {
-            debugger;
             send.call(xhr, file);
             xhr.send = send;
           };
