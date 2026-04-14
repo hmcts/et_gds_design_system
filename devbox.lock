@@ -7,11 +7,33 @@
     },
     "libffi.dev": {
       "resolved": "github:NixOS/nixpkgs/62e3050a29278c985725a86704faa1e99236b51a#libffi.dev",
-      "source": "nixpkg"
+      "source": "nixpkg",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "dev",
+              "path": "/tmp/containerbase/cache/nix/store/5j5ps6kv2lx4vbkvvsbzybdhgj2368lm-libffi-3.5.2-dev",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "libyaml.dev": {
       "resolved": "github:NixOS/nixpkgs/62e3050a29278c985725a86704faa1e99236b51a#libyaml.dev",
-      "source": "nixpkg"
+      "source": "nixpkg",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "dev",
+              "path": "/tmp/containerbase/cache/nix/store/qkzwi3il7r2pqlnkc8kahvfy11mgxhdm-libyaml-0.2.5-dev",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "nodejs@latest": {
       "last_modified": "2026-03-27T11:17:38Z",
@@ -211,7 +233,7 @@
         }
       }
     },
-    "yarn@latest": {
+    "yarn@1.22.22": {
       "last_modified": "2026-03-21T07:29:51Z",
       "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#yarn",
       "source": "devbox-search",
