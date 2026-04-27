@@ -15,7 +15,7 @@ module EtGdsDesignSystem
       def send_request(path:,
                        subject:,
                        api_base: ENV.fetch('ET_API_URL',
-                                           'http://api.et.127.0.0.1.nip.io:3100/api/v2'),
+                                           'http://api.localhost:3100/api/v2'),
                        headers: {})
 
         request = Typhoeus::Request.new "#{api_base}#{path}",
